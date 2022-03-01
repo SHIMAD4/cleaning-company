@@ -1099,6 +1099,11 @@ h3 {
   padding-top: 70px;
   background: url('../img/director-duplicate-bg.jpg') center bottom no-repeat;
 }
+@media (max-width: 620px) {
+  .director-duplicate {
+    background-size: 1200px;
+  }
+}
 @media (max-width: 425px) {
   .director-duplicate {
     background-size: 1000px;
@@ -4993,6 +4998,7 @@ h3 {
   }
 
   .header__device-wrapper {
+    margin-left: 48px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
