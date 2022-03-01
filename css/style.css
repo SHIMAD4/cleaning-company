@@ -434,12 +434,13 @@ textarea {
 .btn-hotprice_custom{
   width: 300px;
 }
-@media screen and (max-width: 768px;){
+@media screen and (max-width: 768px){
   .button-virus {
     width: 300px;
+    font-size: 35px;
   }
   .btn-virus_text{
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 
@@ -595,6 +596,9 @@ h3 {
   left: 0px;
   z-index: 1001;
   display: none;
+}
+.home__download-box {
+  padding-bottom: 1px;
 }
 
 .video__block-back {
