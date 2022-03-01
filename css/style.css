@@ -749,6 +749,17 @@ h3 {
   margin-right: 0;
 }
 
+@media (max-width: 375px) {
+  .logo__img {
+   width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .logo__img {
+   width: 250px;
+  }
+}
+
 .logo__img img {
   width: 100%;
 }
@@ -1087,6 +1098,16 @@ h3 {
 .director-duplicate {
   padding-top: 70px;
   background: url('../img/director-duplicate-bg.jpg') center bottom no-repeat;
+}
+@media (max-width: 425px) {
+  .director-duplicate {
+    background-size: 1000px;
+  }
+}
+@media (max-width: 375px) {
+  .director-duplicate {
+    background-size: 900px;
+  }
 }
 
 .director-duplicate__title {
@@ -1878,6 +1899,7 @@ h3 {
 .check__work-img {
   text-align: center;
   width: calc(56.66666666666667% - 15px);
+  height: 55vh;
 }
 
 .check__work-elements {
@@ -3927,7 +3949,6 @@ h3 {
     -ms-flex-pack: center;
     justify-content: center;
   }
-
   .director__info {
     width: calc(83.33333333333334% - 15px);
   }
@@ -4186,6 +4207,7 @@ h3 {
 
   .check__work-img {
     width: calc(100% - 15px);
+    height: 25vh;
   }
 
   .check__salary-infobox {
@@ -4598,7 +4620,7 @@ h3 {
 
 @media screen and (max-width: 480px) {
    .button-freecity {
-    width: 300px;
+    width: 260px;
   }
   .btn-virus_text {
     font-size: 14px;
@@ -5026,6 +5048,31 @@ h3 {
   .wrapper {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+@media (max-width: 1440px) {
+  .check__work-img {
+    height: 50vh;
+  }
+}
+@media (max-width: 1024px) {
+  .check__work-img {
+    height: 55vh;
+  }
+}
+@media (max-width: 768px) {
+  .check__work-img {
+    height: 50vh;
+  }
+}
+@media (max-width: 425px) {
+  .check__work-img {
+    height: 30vh;
+  }
+}
+@media (max-width: 375px) {
+  .check__work-img {
+    height: 30vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
