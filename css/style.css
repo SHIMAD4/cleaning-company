@@ -2914,7 +2914,6 @@ h3 {
 
 .footer__contact-box--phone {
   width: calc(33.083333333333336% - 15px);
-  text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2945,13 +2944,13 @@ h3 {
   font-size: 14px;
   color: #fff;
   text-decoration: none;
-  margin-left: 48px;
+  margin-left: 32px;
   display: inline-block;
   position: relative;
 }
 
 .footer__device--viber {
-  margin-left: 0;
+  /* margin-left: 0; */
 }
 
 .footer__device--viber:before {
@@ -3863,8 +3862,8 @@ h3 {
   }
 
   .footer__device {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
+    /* -ms-flex-item-align: end;
+    align-self: flex-end; */
   }
 
   .popup__document-title {
@@ -4537,11 +4536,11 @@ h3 {
   }
 
   .footer__contact-box--phone {
-    width: calc(100% - 15px);
+    width: calc(51% - 15px);
   }
 
   .footer__contact-box--phone {
-    padding: 10px 0;
+    padding: 10px 0px 10px 135px;
   }
 
   .footer__contact-phone {
@@ -5007,7 +5006,6 @@ h3 {
   }
 
   .header__device-wrapper {
-    margin-left: 48px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -5079,15 +5077,70 @@ h3 {
   .check__work-img {
     height: 50vh;
   }
+  .footer__contact-box--phone {
+    width: calc(39% - 15px);
+  }
+
+  .footer__contact-box--phone {
+    padding: 10px 0px 10px 20px;
+  }
 }
 @media (max-width: 425px) {
   .check__work-img {
     height: 30vh;
   }
+  .footer__contact-box--phone {
+    width: calc(47% - 15px);
+  }
+
+  .footer__contact-box--phone {
+    padding: 10px 0px 10px 116px;
+  }
+  .footer__device {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .footer__device:last-child {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 375px) {
   .check__work-img {
     height: 30vh;
+  }
+  .footer__contact-box--phone {
+    width: calc(60% - 15px);
+  }
+
+  .footer__contact-box--phone {
+    padding: 10px 0px 10px 135px;
+  }
+  .footer__device {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .footer__device:last-child {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 320px) {
+  .footer__contact-box--phone {
+    width: calc(72% - 15px);
+    margin-left: 10px;
+  }
+
+  .footer__contact-box--phone {
+    padding: 10px 0px 10px 30px;
+  }
+  .footer__device {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .footer__device:last-child {
+    margin-top: 5px;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
