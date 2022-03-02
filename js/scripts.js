@@ -255,6 +255,7 @@ function popup_out() {
 	$('.popup_overlay').hide();
 	$('.popup').hide();
 	$('.popup').removeClass('activePopup');
+	$('.service__box').not(this).removeClass('service__box--active');
 	$('body').find('label').removeClass('red');
 }
 

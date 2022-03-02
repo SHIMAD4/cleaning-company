@@ -382,9 +382,9 @@ textarea {
 .button {
   display: inline-block;
   width: 234px;
-  height: 91px;
-  line-height: 91px;
-  font-size:24px;
+  height: 69px;
+  line-height: 63px;
+  font-size: 19px;
   border-radius: 20px;
   background-color: #A56492;
   font-family: 'Montserrat', sans-serif;
@@ -880,7 +880,15 @@ h3 {
 }
 
 .icon-download{display:inline-block;vertical-align:middle;max-height:91px;margin-right:22px;}
-.icon-download svg{padding-top:16px;}
+.icon-download svg{
+  width: 47px;
+  height: 37px;
+  padding-top:16px;
+}
+.home-svg {
+  width: 70px;
+  height: 67px;
+}
 
 .button--top__download svg path{
 	-webkit-transition: all 220ms ease;

@@ -18,11 +18,11 @@ $(function() {
 			$('.service__hidden-box').not(hiddenBox).slideUp(300);
 			hiddenBox.slideToggle(300);
 			
-			$('.service__box').not(this).removeClass('service__box--active').find('.service__img-hidden').text('РџРѕРґСЂРѕР±РЅРµРµ');
+			$('.service__box').not(this).removeClass('service__box--active').find('.service__img-hidden').text('Подробнее');
 			if ($(this).hasClass('service__box--active')) {
-				$(this).find('.service__img-hidden').text('РџРѕРґСЂРѕР±РЅРµРµ');
+				$(this).find('.service__img-hidden').text('Подробнее');
 			} else {
-				$(this).find('.service__img-hidden').text('Р—Р°РєСЂС‹С‚СЊ');
+				$(this).find('.service__img-hidden').text('Подробнее');
 			}
 			$(this).toggleClass('service__box--active');
 	    } else if (widthScreen <= 738 && box != 8) {
