@@ -748,7 +748,16 @@ h3 {
 .logo__img {
   margin-right: 0;
 }
-
+@media (max-width: 414px) {
+  .logo__img {
+   width: 300px;
+  }
+}
+@media (max-width: 390px) {
+  .logo__img {
+   width: 300px;
+  }
+}
 @media (max-width: 375px) {
   .logo__img {
    width: 300px;
@@ -4801,7 +4810,7 @@ h3 {
   }
 
   .check__rate-block--red {
-    width: 94px;
+    width: 105px;
   }
 
   .check__rate-block--yellow {
@@ -4810,8 +4819,8 @@ h3 {
   }
 
   .check__rate-block--green {
-    width: 160px;
-    top: -58px;
+    width: 170px;
+    top: -80px;
   }
 
   .check__rate-block--purple {
