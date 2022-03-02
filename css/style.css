@@ -1011,6 +1011,70 @@ h3 {
   background: url('../img/top-arrow.png');
 }
 
+.home__contact-box {
+  
+}
+.home__contact-box--phone {
+  text-align: left;
+    width: calc(33.083333333333336% - 15px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.home__contact-phone {
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+}
+.home__device-wrapper {
+  
+}
+.home__device {
+  font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 32px;
+    display: inline-block;
+    position: relative;
+}
+.home__device--viber::before {
+  content: '';
+  width: 19px;
+  height: 19px;
+  background: url(../img/viber-f.svg);
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+.home__device--whatsapp::before {
+  content: '';
+  width: 19px;
+  height: 19px;
+  background: url(../img/whatsapp-f.svg);
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+.home__device--telegram::before {
+  content: '';
+  width: 19px;
+  height: 19px;
+  background: url(../img/telegram-f.svg);
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
 .director {
   min-height: 648px;
   padding: 36px 0 40px;
@@ -2921,6 +2985,7 @@ h3 {
 .footer__contact-box--mail .fBoxMail span{display:block;color:#fff;width:auto;}
 
 .footer__contact-box--phone {
+  text-align: left;
   width: calc(33.083333333333336% - 15px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2968,7 +3033,7 @@ h3 {
   background: url('../img/viber-f.svg');
   position: absolute;
   top: 0;
-  left: -30px;
+  left: 20%;
 }
 
 .footer__device--whatsapp:before {
@@ -2978,7 +3043,7 @@ h3 {
   background: url('../img/whatsapp-f.svg');
   position: absolute;
   top: 0;
-  left: -30px;
+  left: 20%;
 }
 
 .footer__device--telegram:before {
@@ -2988,7 +3053,7 @@ h3 {
   background: url('../img/telegram-f.svg');
   position: absolute;
   top: 0;
-  left: -30px;
+  left: 20%;
 }
 
 .footer__copyright-wrapper {
@@ -3024,6 +3089,23 @@ h3 {
 
 .footer__copyright-politic:hover {
   text-decoration: none;
+}
+.footer__device--viber::before {
+  position: absolute;
+  left: -70%;
+}
+.footer__device--whatsapp::before {
+  position: absolute;
+  left: -30%;
+}
+
+.home__device--viber::before {
+  position: absolute;
+  left: -70%;
+}
+.home__device--whatsapp::before {
+  position: absolute;
+  left: -30%;
 }
 
 .popup {
@@ -3147,10 +3229,11 @@ h3 {
 }
 
 .popup__document-elem:before {
-  content: 'вЂў';
+  content: '·';
   position: absolute;
-  left: 0;
-  top: 1px;
+  left: -2px;
+  top: -4px;
+  font-size: 40px;
 }
 
 .popup__document-title-form {
@@ -3381,6 +3464,14 @@ h3 {
     padding-left: undefined;
     padding-right: undefined;
   }
+  .footer__device--viber::before {
+    position: absolute;
+    left: -70%;
+  }
+  .footer__device--whatsapp::before {
+    position: absolute;
+    left: -30%;
+  }
 }
 
 @media screen and (max-width: 1160px) {
@@ -3495,6 +3586,22 @@ h3 {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .footer__device--viber::before {
+    position: absolute;
+    left: -70%;
+  }
+  .footer__device--whatsapp::before {
+    position: absolute;
+    left: -35%;
+  }
+  .home__device--viber::before {
+    position: absolute;
+    left: -70%;
+  }
+  .home__device--whatsapp::before {
+    position: absolute;
+    left: -30%;
+  }
 }
 
 @media screen and (max-width: 1060px) {
@@ -3528,6 +3635,14 @@ h3 {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .footer__device--viber::before {
+    position: absolute;
+    left: 30%;
+  }
+  .footer__device--whatsapp::before {
+    position: absolute;
+    left: 30%;
   }
 }
 
@@ -3852,7 +3967,8 @@ h3 {
   }
 
   .footer__contact-box--phone {
-    width: calc(25% - 15px);
+    text-align: center;
+    width: 100%;
   }
 
   .footer__contact-phone {
@@ -3868,6 +3984,20 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .footer__device--viber {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__device--whatsapp {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .footer__device--telegram {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   .footer__device {
     /* -ms-flex-item-align: end;
@@ -3881,6 +4011,10 @@ h3 {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .home__contact-phone {
+    width: 260px;
+    font-size: 25px;
   }
 }
 
@@ -3901,6 +4035,18 @@ h3 {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .home__contact-phone {
+    width: 220px;
+    font-size: 20px;
+  }
+  .footer__device--viber::before {
+    position: absolute;
+    left: 20%;
+  }
+  .footer__device--whatsapp::before {
+    position: absolute;
+    left: 20%;
   }
 }
 
@@ -4544,11 +4690,11 @@ h3 {
   }
 
   .footer__contact-box--phone {
-    width: calc(51% - 15px);
+
   }
 
   .footer__contact-box--phone {
-    padding: 10px 0px 10px 135px;
+
   }
 
   .footer__contact-phone {
@@ -4558,8 +4704,8 @@ h3 {
   .footer__device-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    /* -ms-flex-direction: row;
+    flex-direction: row; */
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -4573,6 +4719,23 @@ h3 {
     flex-direction: column;
   }
 
+  .footer__device--viber:before {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  
+  .footer__device--whatsapp:before {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  
+  .footer__device--telegram:before {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
   #thx {
     width: 380px;
   }
@@ -4608,6 +4771,9 @@ h3 {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .home__contact-box--phone {
+    padding-left: 20px;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -4632,10 +4798,40 @@ h3 {
   .check__formula-wrapper {
     width: calc(100% - 15px);
   }
+  .logo__img {
+    position: relative;
+    top: 0;
+    left: -50%;
+    transform: translate(70%, 0);
+  }
+  .header {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .home__contact-box {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .home__contact-phone {
+    width: 100%;
+    font-size: 25px;
+  }
+  .home__contact-box--phone a{
+    display: flex;
+    flex-direction: column;
+  }
+  .home__device--viber::before{
+    position: absolute;
+    left: 35%;
+  }
+  .home__device--whatsapp::before{
+    position: absolute;
+    left: 35%;
   }
 }
 
@@ -5070,6 +5266,24 @@ h3 {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .logo__img {
+    position: relative;
+    top: 0;
+    left: -10%;
+    transform: translate(10%, 0);
+  }
+  .home__contact-phone {
+    width: 100%;
+    font-size: 25px;
+  }
+  .home__device--viber::before{
+    position: absolute;
+    left: 30%;
+  }
+  .home__device--whatsapp::before{
+    position: absolute;
+    left: 30%;
+  }
 }
 @media (max-width: 1440px) {
   .check__work-img {
@@ -5080,30 +5294,75 @@ h3 {
   .check__work-img {
     height: 55vh;
   }
+  .home__contact-box--phone {
+    width: 94%;
+  }
 }
 @media (max-width: 768px) {
   .check__work-img {
     height: 50vh;
-  }
-  .footer__contact-box--phone {
-    width: calc(39% - 15px);
-  }
-
-  .footer__contact-box--phone {
-    padding: 10px 0px 10px 20px;
   }
 }
 @media (max-width: 425px) {
   .check__work-img {
     height: 30vh;
   }
-  .footer__contact-box--phone {
-    width: calc(47% - 15px);
+  .footer__device {
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
-
-  .footer__contact-box--phone {
-    padding: 10px 0px 10px 116px;
+  .footer__device:last-child {
+    margin-top: 5px;
+    margin-bottom: 0;
   }
+}
+@media (max-width: 420px) {
+  .footer__device--viber:before {
+    position: absolute;
+    top: 0;
+    left: 20%;
+  }
+  
+  .footer__device--whatsapp:before {
+    position: absolute;
+    top: 0;
+    left: 20%;
+  }
+  
+  .footer__device--telegram:before {
+    position: absolute;
+    top: 0;
+    left: 20%;
+  }
+}
+@media (max-width: 401px) {
+  .footer__device {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .footer__device:last-child {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  .footer__device--viber:before {
+    position: absolute;
+    top: 0;
+    left: 20%;
+  }
+  
+  .footer__device--whatsapp:before {
+    position: absolute;
+    top: 0;
+    left: 20%;
+  }
+  
+  .footer__device--telegram:before {
+    position: absolute;
+    top: 0;
+    left: 20%;
+  }
+}
+@media (max-width: 397px) {
   .footer__device {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -5117,13 +5376,26 @@ h3 {
   .check__work-img {
     height: 30vh;
   }
-  .footer__contact-box--phone {
-    width: calc(60% - 15px);
+  .footer__device {
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
-
-  .footer__contact-box--phone {
-    padding: 10px 0px 10px 70px;
+  .footer__device:last-child {
+    margin-top: 5px;
+    margin-bottom: 0;
   }
+}
+@media (max-width: 333px) {
+  .footer__device {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .footer__device:last-child {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 330px) {
   .footer__device {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -5135,12 +5407,7 @@ h3 {
 }
 @media (max-width: 320px) {
   .footer__contact-box--phone {
-    width: calc(72% - 15px);
-    margin-left: 10px;
-  }
 
-  .footer__contact-box--phone {
-    padding: 10px 0px 10px 30px;
   }
   .footer__device {
     margin-top: 5px;
