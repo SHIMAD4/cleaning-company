@@ -964,7 +964,8 @@ h3 {
   padding-top: 10px;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: bold;
   line-height: 24px;
   min-height: 100px;
 }
@@ -1294,7 +1295,7 @@ h3 {
 	font-weight:700;
   margin: 0 auto;
   width: calc(75% - 15px);
-  text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff, 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, -2px -2px 0 #fff, 3px 3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, -3px -3px 0 #fff, 4px 4px 0 #fff, 4px -4px 0 #fff, -4px 4px 0 #fff, -4px -4px 0 #fff, 5px 5px 0 #fff, 5px -5px 0 #fff, -5px 5px 0 #fff, -5px -5px 0 #fff, 6px 6px 0 #fff, 6px -6px 0 #fff, -6px 6px 0 #fff, -6px -6px 0 #fff, 7px 7px 0 #fff, 7px -7px 0 #fff, -7px 7px 0 #fff, -7px -7px 0 #fff, 8px 8px 0 #fff, 8px -8px 0 #fff, -8px 8px 0 #fff, -8px -8px 0 #fff, 9px 9px 0 #fff, 9px -9px 0 #fff, -9px 9px 0 #fff, -9px -9px 0 #fff, 10px 10px 0 #fff, 10px -10px 0 #fff, -10px 10px 0 #fff, -10px -10px 0 #fff, 11px 11px 0 #fff, 11px -11px 0 #fff, -11px 11px 0 #fff, -11px -11px 0 #fff, 12px 12px 0 #fff, 12px -12px 0 #fff, -12px 12px 0 #fff, -12px -12px 0 #fff, 13px 13px 0 #fff, 13px -13px 0 #fff, -13px 13px 0 #fff, -13px -13px 0 #fff, 14px 14px 0 #fff, 14px -14px 0 #fff, -14px 14px 0 #fff, -14px -14px 0 #fff, 15px 15px 0 #fff, 15px -15px 0 #fff, -15px 15px 0 #fff, -15px -15px 0 #fff;
+  background: white;
 }
 
 .map__title--aqua {
@@ -4824,6 +4825,7 @@ h3 {
   .home__contact-box--phone a{
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
   }
   .home__device--viber::before{
     position: absolute;
@@ -4833,6 +4835,9 @@ h3 {
     position: absolute;
     left: 35%;
   }
+  .director-duplicate {
+    display: none;
+  } 
 }
 
 @media screen and (max-width: 480px) {
